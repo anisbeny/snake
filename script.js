@@ -16,7 +16,6 @@ window.onload = function(){
 
     function init(){
         let canvas = document.createElement('canvas');
-       
         canvas.width = canvasWidth;
         canvas.height = canvasHeight;
         canvas.style.border = "30px solid gray";
@@ -25,7 +24,6 @@ window.onload = function(){
         canvas.style.backgroundColor = "#ddd";
         document.body.appendChild(canvas);
         ctx = canvas.getContext('2d');
-      
         snakee = new Snake([[6,4],[5,4],[4,4],[3,4],[2,4]],"right");
         applee = new Apple([10,10]);
         score = 0;
