@@ -16,6 +16,12 @@ window.onload = function(){
 
     function init(){
         let canvas = document.createElement('canvas');
+        ctx.font = "bold 40px sans-serif";
+        ctx.fillStyle = "#000";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.strokeStyle = "white";
+        ctx.lineWidth = 5;
         canvas.width = canvasWidth;
         canvas.height = canvasHeight;
         canvas.style.border = "30px solid gray";
@@ -24,6 +30,8 @@ window.onload = function(){
         canvas.style.backgroundColor = "#ddd";
         document.body.appendChild(canvas);
         ctx = canvas.getContext('2d');
+        ctx.strokeText("Appuyer sur la touche Espace pour rejouer", centreX, centreY - 120);
+        ctx.fillText("Pour commencer à jouer à Snake, utilisez les touches directionnelles du clavier pour guider le serpent.", centreX, centreY - 120);
         snakee = new Snake([[6,4],[5,4],[4,4],[3,4],[2,4]],"right");
         applee = new Apple([10,10]);
         score = 0;
