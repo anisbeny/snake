@@ -1,7 +1,7 @@
 window.onload = function(){
-    let canvasWidth = 900;
-    let canvasHeight = 600;
-    let blockSize = 30;
+    let canvasWidth = 850;
+    let canvasHeight = 550;
+    let blockSize = 25; 
     let ctx;
     let delay = 100;
     let xCoord = 0;
@@ -19,7 +19,7 @@ window.onload = function(){
         canvas.width = canvasWidth;
         canvas.height = canvasHeight;
         canvas.style.border = "30px solid gray";
-        canvas.style.margin = "50px auto";
+        canvas.style.margin = "auto";
         canvas.style.display = "block";
         canvas.style.backgroundColor = "#ddd";
         document.body.appendChild(canvas);
